@@ -18,6 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# Site settings
 title: thoughts 
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -42,7 +43,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: default
       show_date: true
       read_time: true
       related: true
@@ -52,7 +53,7 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: single
+      layout: default
 
 # Footer links
 footer:
