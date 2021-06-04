@@ -22,10 +22,10 @@ title: thoughts
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
     Some of my thoughts on law, tech and other things.
-#baseurl: "" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: "/thoughts" # the subpath of your site, e.g. /blog
+url: "https://sch00ner.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrrb
+github_username:  Sch00ner
 
 # Build settings
 theme: jekyll-theme-hacker 
