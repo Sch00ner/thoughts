@@ -26,10 +26,67 @@ baseurl: "/thoughts" # the subpath of your site, e.g. /blog
 url: "https://sch00ner.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: AncapSansad
 #github_username: Sch00ner
+locale: "en-GB"
+title_separator: "|"
+repository: "sch00ner/thoughts"
+search: true
+paginate: 5
+timezone: Asia/Kolkata
+breadcrumbs: true
+
+
+# Default settings for posts and pages
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      show_date: true
+      read_time: true
+      related: true
+      share: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+
+# Footer links
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/AncapSansad"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sch00ner"
+
+# Archives
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 # Build settings
 #theme: jekyll-theme-hacker 
 remote_theme: mmistakes/minimal-mistakes@4.23.0
+minimal_mistakes_skin: dark
+
 plugins:
   - jekyll-feed
   - jekyll-include-cache
