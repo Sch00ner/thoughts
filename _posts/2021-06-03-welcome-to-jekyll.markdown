@@ -1,5 +1,6 @@
 ---
 title:  "Welcome to Jekyll!"
+toc: true
 date:   2021-06-03 22:14:45 +0530
 categories: jekyll update
 ---
